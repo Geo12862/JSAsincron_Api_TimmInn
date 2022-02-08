@@ -1,0 +1,177 @@
+.formheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formheader .volver {
+    display: none;
+}
+
+.formheader a{
+    display: flex;
+    justify-content: center;
+}
+
+.formheader .logoF {
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cuerpoForm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.seccion1 {
+    max-width: 32.25rem;
+    padding: 2.5rem 3.75rem 2.5rem 2.5rem;
+    border-right: 1px solid rgb(204,204,204);
+    flex: 0.85 1 0%;
+}
+
+.box-seccion1 {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.icono-seccion1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.icono-seccion1 i {
+    font-size: 24px;
+}
+
+.seccion2 {
+    max-width: 32.25rem;
+    padding: 2rem 1rem;
+    flex: 1 1 0%;
+}
+
+.formulario {
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+    padding-left: 10%;
+}
+
+.formulario_titulo {
+    text-align: center;
+    margin-top: 0;
+    color: rgba(0,0,0,0.7);
+}
+
+.formulario_input, .formulario_label, .formulario_submit {
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+} 
+
+.formulario_input {
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+/*Para la animación del input*/
+.formulario_input:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.7);
+}
+/*Posicionamiento del Label encima del input*/
+.formulario_input:focus + .formulario_label {
+    margin-top: -100px;
+}
+
+.formulario_label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -65px;
+    z-index: -20;
+    color: grey;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+
+.formulario_eye {
+    padding-right: 8px;
+    position: absolute;
+    margin-top: -66px;
+    margin-left: 82%;
+    z-index: 20;
+    color: black;
+    font-size: 1.3em;
+    background: transparent;
+    border: none;
+    cursor: pointer;   
+}
+.formulario_eye:hover {
+    color: #ebc42a;
+}
+
+.formulario_submit {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fijar {
+    margin-top: -100px;
+}
+
+.otraOpcion {
+    width: 100%;
+    /* border-top: 1px solid rgba(204, 204, 204, 0.8); */
+    text-align: center;
+    position: relative;
+    min-height: 22px;
+}
+.linea {
+    border-top: 1px solid rgba(204, 204, 204, 0.8);
+    padding: 10px;
+    background: transparent;
+}
+
+.opcionTexto {
+    display: inline-block;
+    margin: 0px auto;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    margin-top: -31px;
+    margin-left: -20%;
+}
+
+.volverFormulario {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+}
+
+
+.formulario a {
+    text-decoration: none;
+}
+
+.formulario a:hover {
+    color: #ebc42a;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}

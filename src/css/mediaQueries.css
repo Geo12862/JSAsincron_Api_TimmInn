@@ -1,0 +1,186 @@
+@media only screen and (max-width: 500px) {
+    .container .card:nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .desk {
+        position: relative;
+    }
+    .desk .search{
+        display: none;
+    }
+    .desk .date{
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+    .login {
+        grid-column: 8 / 9;
+        grid-row: none;
+        margin-top: 0px;
+        
+    }
+
+    .desk .menu-burger{
+        display: block;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .desk .menu{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #1c1c1c;
+        margin-top: 38em;
+        transform: translateX(-180%) translateY(100%);
+        transition: all .1s;
+    }
+    /*Clase que desde JS retorna el menú*/
+    .desk .menu-toggle{
+        transform: translateX(-80%) translateY(99%);
+    }
+
+    .nuevoEvento .overlay #text{
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+    .deskEvento .formulario {
+        align-items: stretch;
+    }
+
+    .deskEvento .formulario label{
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    
+    .desk .menu-footer {
+        grid-column: 5 / 7;
+        flex-direction: column;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 700px){
+    .nuevoEvento .seleccionar {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 800px){
+    .container .card:nth-child(4) {
+        display: none;
+    }
+    .cuerpo .nuevo {
+        grid-row: 1 / 2;
+    }
+    .card-evento {
+        flex-direction: column;
+    }
+    .card-imgE {
+        width: 100%;
+    }
+    .card-evento .papelera {
+        grid-template-rows: none;
+        grid-template-columns: none;
+    }
+    .card-evento .fa-edit {
+        grid-row: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-evento .fa-trash-alt {
+        grid-row: none;
+        
+    }
+}
+
+@media only screen and (max-width: 910px){
+    /*Destacados*/
+    .home .container-Date {
+        display: none;
+    }
+
+    .home .subs {
+        display: none;
+    }
+
+    .home .video{
+        grid-column: 4 / 6;
+        
+    }
+
+    .home .cont-1{
+        grid-column: 3 / 7;
+        
+    }
+    /*Segundo contenedor de cards*/
+    .home .cont-2{
+        grid-column: 3 / 7;
+        
+    }
+    /*Tercer contenedor de cards*/
+    .home .cont-3{
+        grid-column: 3 / 7;
+        
+    }
+
+    
+    /*FORMULARIOS*/
+    .formheader {
+        width: 100%;
+        padding: 0px 1rem;
+        border-bottom: 1px solid rgb(204,204,204);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .formheader .volver {
+        width: 5%;
+        height: 100%;
+        padding: 0px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .formheader a {
+        text-decoration: none;
+    }
+
+    .formheader a:hover {
+        color: #ebc42a;
+    }
+
+    .formheader .logoF {
+        width: 20%;
+        height: 100%;
+        margin: 0 0 10px -70%;
+        /* margin-top: 10px;
+        margin-bottom: 20px; */
+    }
+    .seccion1 {
+        display: none;
+    }
+
+    .seccion2 {
+        padding: 0;
+    }
+
+}
+
+
+

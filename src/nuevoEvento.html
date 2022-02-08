@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Evento</title>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/timeInn2.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+    <script src="https://kit.fontawesome.com/5c45a9d67b.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+          $(document).ready(() => {
+          //Load the HTML contents of the header into <header>
+              $("header").load("header-footer/header.html");
+              $("footer").load("header-footer/footer.html");
+          });
+      </script>
+</head>
+<body>
+    <header></header>
+    <main class="deskEvento">
+        <legend class="formulario">
+            <label for="" class="label-1">Introduce un título: <input type="text" autofocus class="rellenar"></label>
+            <label for="" class="label-2">Página web del evento: <input type="url" class="rellenar"></label>
+            <label for="" class="label-3">Introduce una descripción: <textarea name="textarea" id="" cols="30" rows="10" class="rellenar"></textarea></label>
+            <label for="" class="label-4">Introduce una imagen: <input type="file" accept="image/*" class="rellenar"></label>
+            <label for="" class="label-5">Introduce la fecha: <input type="date" class="rellenar"></label>
+            <label for="" class="label-6">Introduce la hora del evento: <input type="time" class="rellenar"></label>
+            <label for="" class="label-7">Introduce la dirección: <input type="text" class="rellenar"></label>
+            </legend>
+            <input type="reset" name="borrar" value="Borrar" id="" class="boton1">
+            <input type="submit" name="" id="" class="boton2">
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </main>
+    <footer></footer>
+</body>
+</html>

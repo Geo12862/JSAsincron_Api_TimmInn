@@ -1,0 +1,844 @@
+/*CSS Para Proyecto TimeInn Manipulación 2*/
+/*Importamos estilos de letras*/
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Josefin+Sans:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Josefin+Sans:wght@200;400&display=swap');
+/*Caja primcipal*/
+/*estilos generales*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*Trabajamos el header*/
+.desk {
+    background-color: #1c1c1c;
+    display: grid;
+    grid-template-columns: 0.2fr repeat(7, 1fr) 0.2fr;
+    align-items: center;
+
+}
+/*Trabajamos el logo del header*/
+.desk .logo{
+    width: 80px;
+    height: 70px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+/*Trabajamos el menu del header*/
+.desk .menu{
+    grid-column: 4 / 7;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+}
+/*Trabajamos el Título*/
+.desk .titulo{
+    font-family:'East Sea Dokdo', cursive;
+    color: #ebc42a;
+    grid-column: 4 / 7;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+/*Trabajamos la apariencia del menu del header*/
+.desk .menu li{
+    list-style: none;
+
+}
+
+.desk .menu a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+/*Cambio de color al pasar por encima*/
+.desk .menu a:hover{
+    color: #ebc42a;
+}
+
+.desk .menu-burger{
+    display: none;
+    color: white;
+}
+
+/*Login*/
+.login {
+    grid-column: 7 / 8;
+    grid-row: 2 / 3;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.login .fa-user {
+    font-size: 170%;
+    color: white;
+}
+
+.login .fa-user:hover {
+    color: #ebc42a;
+}
+/*Trabajamos los imputs*/
+.desk .search{
+    grid-column: 8 / 9;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.desk .date{
+    grid-column: 8 / 9;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+}
+
+/*Estructura de la página*/
+
+/*contenedor div*/
+.home {
+    background-color: whitesmoke;
+    height: 100%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 0.2fr repeat(8, 1fr) 0.2fr;
+    align-items: center;
+}
+/*Posicionamiento video*/
+.home .video{
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    width: 280px;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Posicionamiento subscripción*/
+.home .subs {
+    grid-column: 8 / 10;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
+    height: 30px;
+    width:  12vw;
+    line-height: 30px;
+    border: none;
+    background-color: #ebc42a;
+    color: #1c1c1c;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: .3s ease alt;
+    cursor: pointer;
+}
+.home .subs:hover {
+    color: white;
+}
+
+/*Primer contenedor de cards*/
+.home .cont-1{
+    grid-column: 2 / 6;
+    grid-row: 4 / 6;
+    text-align: center;
+    
+}
+/*Segundo contenedor de cards*/
+.home .cont-2{
+    grid-column: 2 / 6;
+    grid-row: 7 / 9;
+    text-align: center;
+    
+}
+/*Tercer contenedor de cards*/
+.home .cont-3{
+    grid-column: 2 / 6;
+    grid-row: 10 / 12;
+    text-align: center;
+    
+}
+/* Extructura contenedor */
+.container{
+    font-size: 1em;
+    background: none;
+    color: #1c1c1c;
+    padding: 5px 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+    margin-top: 10px;
+
+}
+.container .h1{
+    text-align: center;
+   
+}
+/*Cards*/
+.position-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: smaller;
+
+}
+
+.card a {
+    text-decoration: none;
+}
+
+
+.card-img {
+    background-color: #1c1c1c;
+    height: 90px;
+    margin-bottom: 5px;
+    background-size: cover;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.img {
+    max-height: 90px;
+    max-width: 120px;
+    height: auto;
+    width: auto;
+}
+.card-1 {
+    background-image: url(../img/noticia6.jpg);
+}
+
+.card-2, .card-E1{
+    background-image: url(../img/noticia7.jpg);
+}
+.card-3, .card-E3{
+    background-image: url(../img/noticia8.jpg);
+}
+.card-4, .card-E2{
+    background-image: url(../img/noticia9.jpg);
+}
+.card-5{
+    background-image: url(../img/evento1.jpg);
+}
+.card-6{
+    background-image: url(../img/evento2.jpg);
+}
+.card-7{
+    background-image: url(../img/evento3.jpg);
+}
+.card-8{
+    background-image: url(../img/evento4.jpg);
+}
+.card-9{
+    background-image: url(../img/noticia1.jpg);
+}
+.card-10{
+    background-image: url(../img/noticia2.jpg);
+}
+.card-11{
+    background-image: url(../img/noticia3.jpg);
+}
+.card-12{
+    background-image: url(../img/noticia4.jpg);
+}
+
+
+.btn{
+    font-size: 0.7em;
+    background: none;
+    color: #1c1c1c;
+    padding: 5px 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ebc42a;
+}
+
+/* boton return to top*/
+
+#myBtn {
+    display: none; /* boton oculto */
+    position: fixed; 
+    bottom: 20px; /* que el boton esté siempre en la parte de abajo */
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+  
+#myBtn:hover {
+    background-color: #555; 
+}
+/*Contenedor Date h1*/
+.container-Date .destacados {
+    background: #ebc42a;
+    width: 33vw;
+
+    border-radius: 30px 30px 0px 0px;
+}
+/*Contenedor del calendario*/
+.home .container-Date {
+    grid-column: 7 / 11;
+    grid-row: 3 / 9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.container-Date {
+    background: none;
+    color: #1c1c1c;
+    height: 100%;
+    padding: 5px 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+    margin-top: 10px;
+
+      
+}
+
+/*Calendario*/
+.calendar {
+    text-align: center;
+    width: 300px;
+    background:#1c1c1c;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.container-Date ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0px;
+}
+.container-Date li{
+    text-align: right;
+}
+.container-Date a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.container-Date a:hover {
+    color: #ebc42a;
+}
+
+
+.first-day {
+    grid-column-start: 1;
+}
+
+.day-name {
+    background: #ebc42a;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ebc42a;
+    
+}
+
+/* cards date y partes de card evento*/
+.position-card-date, .position-card-evento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-date {
+    background-color: white;
+    width: 33vw;
+    margin: 5px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* .card-date h4 {
+    font-size: 7px;
+    
+} */
+
+.card-evento h4{
+    color: #1c1c1c;
+    order: 3;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.card-date a, .card-evento a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.card-imgD {
+    background-color: #1c1c1c;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+    background-size: 10vw;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    order: 1;
+}
+
+.descrip {
+    order: 2;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+.descrip h4 {
+    font-size: 9px;
+    margin-left: 70px;
+}
+.descrip h3 {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+.descrip p {
+    
+    font-size: 8px;
+}
+
+.mapa {
+    order: 4;
+    align-self: center;
+}
+.box-mapa {
+    background-color: #1c1c1c;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    background-size: 10vw;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.direc {
+    font-size: 5px;
+}
+.papelera {
+    order: 5;
+    align-self: flex-end;
+    margin-left: 25px;
+    cursor: pointer;  
+}
+
+.card-D1 {
+    background-image: url('');
+}
+.card-D2 {
+    background-image: url('');
+}
+.card-D3 {
+    background-image: url('');
+}
+/*FOOTER*/
+.autores {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.autores a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+/*Trabajamos el menu del footer*/
+.desk .menu-footer{
+    grid-column: 6 / 9;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-right: 4vw;
+}
+
+/*Trabajamos la apariencia del menu del header*/
+.desk .menu-footer li{
+    list-style: none;
+
+}
+
+.desk .menu-footer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+/*Cambio de color al pasar por encima*/
+.desk .menu-footer a:hover{
+    color: #ebc42a;
+}
+
+/* VENTANA EVENTOS */
+.cuerpo {
+    display: grid;
+    grid-template-columns: 0.2fr repeat(7, 1fr) 0.2fr;
+    grid-template-rows: 0.2fr repeat(4, 1fr) 0.2fr;
+    align-items: center;
+}
+.cuerpo i:hover{
+    color: #ebc42a;
+}
+.cuerpo .nuevo {
+    grid-column: 8 / 9;
+    grid-row: 1 / 3;
+    font-size: 50px;
+    cursor: pointer;
+}
+.cuerpo .nuevoEvento {
+    grid-column: 2 / 7;
+    grid-row: 2 / 6;
+    height: auto;
+    width: 70vw;
+
+    font-size: 1em;
+    background: none;
+    color: #1c1c1c;
+    padding: 5px 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nuevoEvento a:hover {
+    color: #ebc42a;
+}
+
+.nuevoEvento .seleccionar { 
+    background-color: #1c1c1c;
+    width: 100%; 
+    padding: 1.5em;
+    border-radius: 30px 30px 0px 0px; 
+    align-self: center;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.seleccionar label {
+    color: white;
+}
+.card-evento {
+    background-color: white;
+    border: 1px solid #1c1c1c;
+    width: 100%; 
+    padding: 1.5em;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-self: flex-start;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-imgE {
+    background-color: #1c1c1c;
+    height: 20vh;
+    width: 15vw;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-radius: 20px;
+    order: 1;
+}
+
+.card-evento .descrip {
+    order: 2;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+.card-evento .descrip h3 {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.card-evento .descrip p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.card-evento h4{
+    font-size: 18px;
+}
+
+
+.card-evento .mapa {
+    order: 4;
+    align-self: center;
+    margin-left: 10px;
+}
+.card-evento .box-mapa {
+    background-color: #1c1c1c;
+    height: 15vh;
+    width: 10vw;
+    margin-bottom: 10px;
+    background-size: 10vw;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.card-evento .direc {
+    font-size: 12px;
+}
+.card-evento .papelera {
+    order: 5;
+    /* align-self: center; */
+    margin-left: 25px;
+    font-size: 20px;
+
+    display: grid;
+    grid-template-rows: 0.2fr repeat(6, 1fr) 0.2fr;   
+}
+
+.card-evento .fa-edit{
+    grid-row: 2 / 3;
+}
+.card-evento .fa-trash-alt{
+    grid-row: 7 / 8;
+}
+
+.card-evento .btn {
+    font-size: 1.0em;
+}
+
+.fecha{
+    order: 1;
+}
+
+.lugar {
+    order: 2;
+}
+.evento {
+    order: 3;
+}
+
+/*NUEVO EVENTO*/
+
+.deskEvento {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 0.2fr repeat(7, 1fr) 0.2fr;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.formulario{
+    grid-column: 3 / 8;
+    grid-row: 3 / 7;
+    font-size: 0.8em;
+    background: white;
+    color: #1c1c1c;
+    padding: 5px 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+
+.label-1 {
+    order: 1;
+    margin: 10px;
+}
+.label-1 input {
+    margin-left: 0px;
+}
+.label-2 {
+    order: 2;
+    margin: 10px;
+}
+.label-2 input {
+    margin-left: 0px;
+}
+.label-3 {
+    order: 3;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.label-3 textarea {
+    margin-left: 0px;
+}
+.label-4 {
+    order: 4;
+    margin: 10px;
+}
+.label-4 input {
+    margin-left: 0px;
+
+}
+.label-5 {
+    order: 5;
+    margin: 10px;
+}
+.label-5 input {
+    margin-left: 0px;
+}
+.label-6 {
+    order: 6;
+    margin: 10px;
+}
+.label-6 input {
+    margin-left: 0px;
+}
+.label-7 {
+    order: 7;
+    margin: 10px;
+}
+.label-7 input {
+    margin-left: 0px;
+}
+
+.boton1 {
+    grid-column: 4 / 5;
+    grid-row: 8 / 9;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+.boton2 {
+    grid-column: 6 / 7;
+    grid-row: 8 / 9;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+.boton3 {
+    grid-column: 5 / 6;
+    grid-row: 0 / 1;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.boton1:hover, .boton2:hover, .boton3:hover {
+    background-color: #ebc42a;
+}
+
+/* cookies */
+.cookieOverlay{
+    /* background-color: black;
+    position: absolute;
+    top: 25.5vh;
+    right: 41vw;
+    font-size: large; */
+    position: fixed; 
+    bottom: 60vh; /* que el boton esté siempre en la parte de abajo */
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #EBC42A; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    
+}
+.cookieParent{
+    background-color: black;
+}
+.botonCookie{
+    background-color: #EBC42A;
+    color: black;
+    
+}
+
+/* overlay */
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 5vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  #text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.btn-cerrar-popup {
+    grid-column: 8 / 9;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 5vh;
+    display: block;
+    text-align: center;
+    color: #BBBBBB;
+    transition: .3s ease all;
+}

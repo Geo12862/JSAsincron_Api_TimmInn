@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/formularis.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+    
+    <script src="https://kit.fontawesome.com/5c45a9d67b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header class="formheader">
+        <button aria-label="volver" class="volver" id="volver">
+            <div>
+                <a href="/TimeInn/src/index.html" title="TimeInn"><i class="fas fa-long-arrow-alt-left"></i></a>
+            </div>
+        </button>
+        <a href="/TimeInn/src/index.html" title="TimeInn">
+            <img src="img/Logo.png" class="logoF" alt="Logo TimeInn">
+        </a>
+    </header>
+    <main class="cuerpoForm">
+        <section class="seccion1">
+            <div class="box-seccion1">
+                <div class="icono-seccion1">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div>
+                    <h4>Gestiona tus eventos</h4>
+                    <p>Publica y edita tus eventos, para que nadie se los pierda</p>
+                </div> 
+            </div>
+            <div class="box-seccion1">
+                <div class="icono-seccion1">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div>
+                    <h4>¡Únete a Premium!</h4>
+                    <p>Forma parte de la comunidad y disfruta de todas las ventajas</p>
+                </div>
+            </div>
+            <div class="box-seccion1">
+                <div class="icono-seccion1">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <div>
+                    <h4>Lista de deseos personalizada</h4>
+                    <p>Guarda tus eventos favoritos, para no perderte ninguno</p>
+                </div>
+            </div>
+        </section>
+        <section class="seccion2">
+            <form action="" class="formulario" id="formularioL">
+                <div class="formulario_titulo">
+                    <h1>Iniciar sesión</h1>
+                </div>
+                <div>
+                    <input type="email" id="email" name="username" required autofocus class="formulario_input">
+                    <label for="username" class="formulario_label">E-mail</label>
+                    <div></div>
+                </div>
+                <div>
+                    <input type="password" id="password" required class="formulario_input">
+                    <label for="password" class="formulario_label">Contraseña</label>
+                    <div>
+                        <button id="verPasword" class="formulario_eye">
+                            <i class="far fa-eye"></i>
+                        </button>
+                        <!-- <i class="far fa-eye-slash formulario_eye"></i> -->
+                    </div>
+                    <div></div>
+                </div>
+
+                <a href="">He olvidado mi contraseña</a>
+
+                <button type="submit" class="formulario_submit" id="iniciarSesion">Iniciar sesión</button>
+                <div class="otraOpcion">
+                    <div class="linea"></div>
+                    <span class="opcionTexto">¿Eres nuevo cliente?</span>
+                </div>
+                <div class="volverFormulario">
+                    <a href="formulariSignUp.html">Crear cuenta</a>
+                </div>
+                    
+            </form>
+        </section> 
+    </main>
+
+    <script src="./js/form.js"></script>
+    <script type="module" src="js/timeInn.js"></script>
+
+</body>
+</html>
