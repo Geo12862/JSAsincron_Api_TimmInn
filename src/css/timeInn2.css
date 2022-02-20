@@ -282,6 +282,10 @@ body{
     background-color: #ebc42a;
 }
 
+.more {
+    text-decoration: none;
+}
+
 /* boton return to top*/
 
 #myBtn {
@@ -664,6 +668,21 @@ body{
     order: 3;
 }
 
+.btnSerch{
+    order: 4;
+    font-size: 0.7em;
+    background: none;
+    color: #ffff;
+    padding: 5px 10px;
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btnSerch:hover{
+    background-color: #ebc42a;
+}
 /*NUEVO EVENTO*/
 
 .deskEvento {
@@ -676,7 +695,7 @@ body{
 }
 .formulario{
     grid-column: 3 / 8;
-    grid-row: 3 / 7;
+    grid-row: 2 / 7;
     font-size: 0.8em;
     background: white;
     color: #1c1c1c;
@@ -812,7 +831,7 @@ body{
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
-    top: 5vh;
+    top: 2vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -833,7 +852,7 @@ body{
 
 .btn-cerrar-popup {
     grid-column: 8 / 9;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     font-size: 16px;
     line-height: 16px;
     margin-top: 5vh;

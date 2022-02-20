@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "titulo": "The Vult",
+      "fecha": "12-11-21",
+      "imagen": "https://raw.githubusercontent.com/Geo12862/JSAsincron_Api_TimmInn/DevJorge/src/img/evento1.jpg?token=GHSAT0AAAAAABQWORBTPXAOCUJP7QQW7D6KYQL7ZCA",
+      "fuente": "https://www.aficine.com/ca/peliculas/way-down/?cineId=36"
+    },
+    {
+      "id": 2,
+      "titulo": "Last Night in Soho",
+      "fecha": "9-2-22",
+      "imagen": "https://raw.githubusercontent.com/Geo12862/JSAsincron_Api_TimmInn/DevJorge/src/img/evento2.jpg?token=GHSAT0AAAAAABQWORBT2LGN4DSWITJU4GHUYQL74MQ",
+      "fuente": "https://www.aficine.com/ca/peliculas/ultima-noche-en-el-soho/?cineId=36"
+    },
+    {
+      "id": 3,
+      "titulo": "Spencer",
+      "fecha": "19-11-21",
+      "imagen": "https://raw.githubusercontent.com/Geo12862/JSAsincron_Api_TimmInn/DevJorge/src/img/evento3.jpg?token=GHSAT0AAAAAABQWORBTYGPW6DQG3ZCMO6E2YQL75BQ",
+      "fuente": "https://www.aficine.com/ca/peliculas/spencer/"
+    },
+    {
+      "id": 4,
+      "titulo": "Antlers",
+      "fecha": "26-12-21",
+      "imagen": "https://raw.githubusercontent.com/Geo12862/JSAsincron_Api_TimmInn/DevJorge/src/img/evento4.jpg?token=GHSAT0AAAAAABQWORBTXWVN4QW72GJTWBGCYQL77EA",
+      "fuente": "https://www.aficine.com/ca/peliculas/antlers-criatura-oscura/"
+    },
+    {
+      "id": 5,
+      "titulo": "DANI MARTÍN - MALLORCA LIVE SUMMER - CALVIA",
+      "fecha": "12-08-22",
+      "imagen": "https://raw.githubusercontent.com/Geo12862/JSAsincron_Api_TimmInn/DevJorge/src/img/noticia6.jpg?token=GHSAT0AAAAAABQWORBTAT7J4547VYWMJOJOYQMAA3Q",
+      "fuente": "https://www.elcorteingles.es/entradas/conciertos/entradas-dani-martin-mallorca-live-summer-calvia/"
+    },
+    {
+      "id": 7,
+      "titulo": "MARC ANTHONY - OPUS TOUR - SEVILLA",
+      "fecha": "23-06-22",
+      "imagen": "https://raw.githubusercontent.com/Geo12862/JSAsincron_Api_TimmInn/DevJorge/src/img/noticia8.jpg?token=GHSAT0AAAAAABQWORBSX6QY5SZHL7OJ46A6YQMAA6A",
+      "fuente": "https://www.elcorteingles.es/entradas/conciertos/entradas-marc-anthony-opus-tour-sevilla-0000087l10000087K3000000002/"
+    },
+    {
+      "id": 8,
+      "titulo": "AEROSMITH EUROPEAN TOUR 2022 - MADRID",
+      "fecha": "04-06-22",
+      "imagen": "https://raw.githubusercontent.com/Geo12862/JSAsincron_Api_TimmInn/DevJorge/src/img/noticia9.jpg?token=GHSAT0AAAAAABQWORBTGWHAICJ2MHIBRFTQYQMAA7A",
+      "fuente": "https://www.elcorteingles.es/entradas/conciertos/entradas-aerosmith-european-tour-2022-madrid-0000087KR0000087kS0000085FE/"
+    }
+  ]
+}
