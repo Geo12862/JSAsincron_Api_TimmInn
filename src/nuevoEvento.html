@@ -18,25 +18,28 @@
               $("footer").load("header-footer/footer.html");
           });
       </script>
+      <script defer src="./js/apicrud.js"></script>
 </head>
 <body>
     <header></header>
     <main class="deskEvento">
         <legend class="formulario">
-            <label for="" class="label-1">Introduce un título: <input type="text" autofocus class="rellenar"></label>
-            <label for="" class="label-2">Página web del evento: <input type="url" class="rellenar"></label>
+            <label for="" class="label-1">Introduce un título: <input type="text" autofocus class="rellenar" id="tituloE"></label>
+            <label for="" class="label-2">Página web del evento: <input type="url" class="rellenar" id="fuenteE"></label>
             <label for="" class="label-3">Introduce una descripción: <textarea name="textarea" id="" cols="30" rows="10" class="rellenar"></textarea></label>
-            <label for="" class="label-4">Introduce una imagen: <input type="file" accept="image/*" class="rellenar"></label>
-            <label for="" class="label-5">Introduce la fecha: <input type="date" class="rellenar"></label>
+            <label for="" class="label-4">Introduce URL de imagen: <input type="url" accept="image/*" class="rellenar" id="imagenE"></label>
+            <label for="" class="label-5">Introduce la fecha: <input type="date" class="rellenar" id="fechaE"></label>
             <label for="" class="label-6">Introduce la hora del evento: <input type="time" class="rellenar"></label>
             <label for="" class="label-7">Introduce la dirección: <input type="text" class="rellenar"></label>
             </legend>
             <input type="reset" name="borrar" value="Borrar" id="" class="boton1">
-            <input type="submit" name="" id="" class="boton2">
+            <input type="submit" name="" id="crear" class="boton2">
+            <input type="submit" name="Modificar" value="Modificar" id="modif" class="boton3" data-id="">
 
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </main>
     <footer></footer>
+    
 </body>
 </html>
