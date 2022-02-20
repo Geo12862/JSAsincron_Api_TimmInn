@@ -28,12 +28,12 @@
 - [x] overlay crear evento
 - [x] creación lista de eventos
 - [ ] creación lista eventos automática - código hecho pero no funcional
-- [ ] eliminar eventos - código hecho pero no funcional
-- [ ] agregar evento
+- [x] eliminar eventos
+- [x] agregar evento
 - [x] calendario
 - [x] html Formulario Login
 - [x] html Formulario Sign Up
-- [ ] CSS formularios
+- [x] CSS formularios
 - [ ] Mocha formularios
 - [ ] Funciones en TimeInn.js para los formularios enlazados con Mocha
 
